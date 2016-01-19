@@ -1,0 +1,94 @@
+body{
+    overflow-x: hidden;
+    margin: auto;
+    font-family: "Segoe UI Light", sans-serif;
+    color: black;
+}
+
+a:link {
+    color: BLACK;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.navbar{
+    background-color: lightgrey;
+}
+
+.welcome-msg {
+    font-size: 17px;
+    width: 600px;;
+    transform: translatex(113%);
+    padding-top: 16px;
+    padding-bottom: 17px;
+}
+
+.jumbotron{
+    width: auto;
+    height: 415px;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    border-bottom-color: #7C7C7C; 
+    overflow: hidden;
+}
+
+img.demo{
+	width:100%;
+}
+
+.center-banner-style p, .center-banner-style a{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+
+.center-banner1 p {
+    background-color: #9ac652;
+}
+
+.center-banner2 p{
+    background-color: #24B5D4;
+}
+
+.center-banner3 p{
+    background-color: #EF6431;
+}
+
+.center-banner4 p{
+    background-color: #7E888D;
+}
+
+hr {
+    border-width: 0;
+    background-color: #c3c5c8; 
+    height: 2px; 
+    width: 100%;
+    border-bottom: 2px solid #e1e2e3;  
+}
+
+footer {
+    height: 136px;
+}
+
+.bottom-menu-left{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.copyright{
+    font-size: 17px;
+    color: darkgray;
+    text-transform: uppercase;
+    padding-top: 0px;
+}
+
