@@ -2,7 +2,7 @@
 /*Global*/
 
 body {
-    overflow-x: hidden;
+   
     margin: auto;
     font-family: "Segoe UI Light", sans-serif;
     color: black;
@@ -24,6 +24,8 @@ a:hover {
     color: black;
 }
 
+
+
 /* Header */
 
 .account-btn {
@@ -40,6 +42,14 @@ fa-shopping-cart {
     background-color: #D3D3D3;
 }
 
+.country-drop-menu li{
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #7C7C7C;
+}
+
+
+
 /* Main Navagition */
 
 .nav2 {
@@ -47,6 +57,7 @@ fa-shopping-cart {
     border-bottom-style: solid;
     border-bottom-width: thick;
     border-bottom-color: #7C7C7C;
+    margin-bottom: 0;
 }
 
 .head-border {
@@ -134,19 +145,13 @@ fa-shopping-cart {
 }
 
 
-
-
-
-
 /* Banner / Jumbotron*/
 
-.jumbotron {
-    width: auto;
-    height: 415px;
+
+#main-banner {
     border-bottom-style: solid;
     border-bottom-width: thick;
     border-bottom-color: #7C7C7C;
-    overflow: hidden;
 }
 
 
@@ -182,6 +187,48 @@ img.demo {
 
 /* Footer */
 
+#sitefooter #top-footer {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#sitefooter {
+    color: #27425e;
+    font-family: "Enzo Medium";
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+#sitefooter #top-footer .policylink-container div {
+    display: block;
+    min-height: 35px;
+}
+
+#sitefooter #top-footer .policylink-container div .policy-link {
+    color: #27425e;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+}
+
+a:active, a:visited, a:focus {
+    outline: 0;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 hr {
     border-width: 0;
     background-color: #c3c5c8;
@@ -202,8 +249,104 @@ footer {
 }
 
 .copyright {
-    font-size: 17px;
+    font-size: 14px;
     color: darkgray;
     text-transform: uppercase;
     padding-top: 0px;
 }
+
+
+
+
+
+
+
+
+
+
+/* MODAL */
+.modal#myModal .modal-dialog .modal-content {
+    border-top: 4px solid #24b5d4;
+}
+
+.modal .modal-dialog .modal-content {
+    border-radius: 0;
+}
+
+.modal#myModal .modal-dialog .modal-content .modal-body {
+    padding: 0;
+}
+
+.modal-header {
+    min-height: 16.428571429px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.428571429;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: none;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    background-clip: padding-box;
+}
+
+.modal#myModal .modal-dialog .modal-content .modal-header {
+    padding: 8px 15px 15px 15px;
+}
+
+.modal#myModal .modal-dialog {
+    width: 400px;
+}
+
+.modal-dialog {
+    position: relative;
+    z-index: 1050;
+    width: auto;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal#myModal .modal-dialog .modal-content .modal-footer {
+    margin: 0;
+    padding: 13px;
+}
+
+.modal-footer {
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.cancel-text{
+    color: #24b5d4;
+    cursor: pointer;
+    font-family: 'Enzo Light';
+    font-size: 22px;
+    background: none;
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.modal#myModal .modal-dialog .modal-content .modal-footer .circle-border {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #24b5d4;
+    border-radius: 15px;
+    padding: 0 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+

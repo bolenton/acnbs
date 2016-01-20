@@ -14,12 +14,7 @@
 </head>
 
 <body>
-
-
-
-
     <!--Top most header-->
-
     <nav class="navbar navbar-default nav1" role="navigation">
         <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,20 +22,7 @@
                 <a class="navbar-brand" href="#"><img src="assests/ACN/images/home/Mexico.png" /></a>
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mexico <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Mexico</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">United States</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Canada</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Korea</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Australia</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">New Zealand</a></li>
-                        </ul>
+                        <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#myModal">Mexico <b class="caret"></b></a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
@@ -70,13 +52,9 @@
                         </a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            </div>
+        </div>
     </nav>
-
-
-
-
 
     <!--Top Welcome message-->
     <div class="container">
@@ -86,8 +64,6 @@
             <div class="col-md-1"></div>
         </div>
     </div>
-
-
 
     <!--Main menu header-->
     <nav class="navbar navbar-default nav2">
@@ -106,8 +82,6 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse main-menu" id="bs-example-navbar-collapse-1">
-
-
 
                 <a href="#"><img src="assests/ACN/images/home/acn-logo.png" /></a>
 
@@ -148,62 +122,43 @@
                     <li><a href="#">Opportunity</a></li>
                     <li><a href="#">Testimonial</a></li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            </div>
+        </div>
     </nav>
-    <header id="main-menu">
 
+    <!--Main Banner/ Carousel-->
 
-        <div class="head-border"></div>
-        <nav class="top-nav">
-            <ul>
-                <li>
-                    <a href="#">Nutrition &amp; Wellness</a>
-                    <ul id="first-layer">
-                        <li>
-                            aNuMe
-                            <ul>
-                                <li>Nutritional Program</li>
-                                <li>Vita+</li>
-                                <li>Momentum</li>
-                                <li>Mi Plan</li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Personal Care</a>
-                    <ul>
-                        <li>
-                            Alumine
-                            <ul>
-                                <li>Chinese Herbs Hair Care</li>
-                                <li>Natural Hair Care</li>
-                                <li>Natural Skin Care</li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Shop Now</a></li>
-                <li><a href="#">Opportunity</a></li>
-                <li><a href="#">Testimonial</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!--Image Carousel-->
-    <div class="jumbotron">
-        <img src="assests/ACN/images/home/carousel/HOME_EN_01.jpg" />
+    <div id="main-banner">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="assests/ACN/images/home/carousel/HOME_EN_01.jpg">
+                </div>
+                <div class="item active">
+                    <img src="assests/ACN/images/home/carousel/HOME_EN_02.jpg">
+                </div>
+                <div class="item">
+                    <img src="assests/ACN/images/home/carousel/HOME_EN_03.jpg">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"></a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"></a>
+        </div>
     </div>
 
-    <!--Center Message-->
-
-    <h1 class="welcome-msg">A Better way Of Life…Today</h1>
-
     <!--Bottom Content-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9"><h1>A Better way Of Life…Today</h1></div>
+        </div>
+    </div>
 
     <section id="middle">
         <div class="container">
@@ -221,8 +176,6 @@
                     </p>
                     <a href="#"><img class="center-cart" src="assests/ACN/images/home/cart3.png" /></a>
                 </div>
-
-
                 <div class="col-md-3">
                     <img class="demo" src="assests/ACN/images/home/home-image2.jpg" />
                     <div class="center-banner2 center-banner-style">
@@ -269,7 +222,6 @@
 
     <footer class="container">
         <div class="row">
-
             <div class="col-sm-7 bottom-menu-left">
                 <div class="row">
                     <div class="col-sm-4">
@@ -283,7 +235,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-sm-5 bottom-menu-right">
                 <div class="row">
                     <div class="col-sm-3">
@@ -305,7 +256,6 @@
                 </div>
             </div>
         </div>
-
         <div class="copyright">
             <h5>
                 &copy; 2016, Oportunidad ACN M&eacute;xico, S. DE R.L. de C.V.
@@ -313,6 +263,94 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Select your Country</h4>
+                </div>
+                <div class="modal-body">
+                    <ul id="country-list">
+                        <li data-dismiss="modal">
+                            <div class="row margin-15">
+                                <div class="col-sm-2 col-xs-2">
+                                    <img src="assests/ACN/images/home/Mexico.png">
+                                </div>
+                                <div class="col-sm-10 col-xs-10">
+                                    <span>Mexico</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row margin-15">
+                                <div class="col-sm-2 col-xs-2">
+                                    <img src="assests/ACN/images/home/Mexico.png">
+                                </div>
+                                <div class="col-sm-10 col-xs-10">
+                                    <span>United States</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row margin-15">
+                                <div class="col-sm-2 col-xs-2">
+                                    <img src="assests/ACN/images/home/Mexico.png">
+                                </div>
+                                <div class="col-sm-10 col-xs-10">
+                                    <span>Canada</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row margin-15">
+                                <div class="col-sm-2 col-xs-2">
+                                    <img src="assests/ACN/images/home/Mexico.png">
+                                </div>
+                                <div class="col-sm-10 col-xs-10">
+                                    <span>Korea</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row margin-15">
+                                <div class="col-sm-2 col-xs-2">
+                                    <img src="assests/ACN/images/home/Mexico.png">
+                                </div>
+                                <div class="col-sm-10 col-xs-10">
+                                    <span>Australia</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row margin-15">
+                                <div class="col-sm-2 col-xs-2">
+                                    <img src="assests/ACN/images/home/Mexico.png">
+                                </div>
+                                <div class="col-sm-10 col-xs-10">
+                                    <span>New Zealand</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row margin-15">
+                                <div class="col-sm-2 col-xs-2">
+                                    <img src="assests/ACN/images/home/Mexico.png">
+                                </div>
+                                <div class="col-sm-10 col-xs-10">
+                                    <span>Austria</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a class="cancel-text" data-dismiss="modal"><span>Cancel&nbsp;<span class="circle-border"><i class="fa-times"></i></span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
