@@ -20,11 +20,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <a class="navbar-brand" href="#"><img src="assests/ACN/images/home/Mexico.png" /></a>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                <ul class="nav navbar-nav black-text">
+                    <li class="dropdown underline">
                         <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#myModal">Mexico <b class="caret"></b></a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown underline">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">English</a></li>
@@ -35,7 +35,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle account-btn" data-toggle="dropdown">Account Login <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle account-btn" data-toggle="dropdown">Account Login</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Customer Login</a></li>
                             <li><a href="#">IBO Login</a></li>
@@ -47,7 +47,7 @@
                             <div class="bob">
                                 <i class="fa fa-shopping-cart fa-flip-horizontal fa-lg"></i>
                                 <span>0</span>
-                                <span>items</span>
+                                <span class="underline">items</span>
                             </div>
                         </a>
                     </li>
@@ -60,7 +60,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-9">Welcome to the ACN lifestyle, where you can look great, feel great, live great!</div>
+            <div class="col-md-9 welcome-msg">Welcome to the ACN lifestyle, where you can look great, feel great, live great!</div>
             <div class="col-md-1"></div>
         </div>
     </div>
@@ -77,21 +77,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Menu</a>
+                <a class="navbar-brand visible-xs" href="#">Menu</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse main-menu" id="bs-example-navbar-collapse-1">
-
                 <a href="#"><img src="assests/ACN/images/home/acn-logo.png" /></a>
-
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
+                    <li class="dropdown green-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             Nutrition &amp; Wellness
                         </a>
                         <ul class="dropdown-menu">
-                            <li>
+                            <li class="drop-style">
                                 aNuMe
                                 <ul>
                                     <li>Nutritional Program</li>
@@ -102,12 +100,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown blue-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             Personal Care
                         </a>
                         <ul class="dropdown-menu">
-                            <li>
+                            <li class="drop-style">
                                 Alumine
                                 <ul>
                                     <li>Chinese Herbs Hair Care</li>
@@ -152,7 +150,6 @@
     </div>
 
     <!--Bottom Content-->
-
     <div class="container">
         <div class="row">
             <div class="col-md-3"></div>
@@ -174,7 +171,13 @@
                         aNuMe offers you a holistic portfolio of nutritional supplements made from natural ingredients designed
                         to give your body what it needs to maintain a healthy
                     </p>
-                    <a href="#"><img class="center-cart" src="assests/ACN/images/home/cart3.png" /></a>
+                    <a data-toggle="textcollapse">...</a>
+                    <div class="uppercase text-condense pull-right">
+                        <div class="shopping-link">
+                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="col-md-3">
                     <img class="demo" src="assests/ACN/images/home/home-image2.jpg" />
@@ -220,46 +223,49 @@
     <!--Footer-->
     <hr />
 
-    <footer class="container">
-        <div class="row">
-            <div class="col-sm-7 bottom-menu-left">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p><a href="#">Contact Us</a></p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p><a href="#">Private Policy</a></p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p><a href="#">Terms And Condition Of Use</a></p>
+    <footer >
+        <div class="container">
+            <div class="row bottom-links">
+                <div class="col-sm-7 bottom-menu-left">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p><a href="#">Contact Us</a></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><a href="#">Private Policy</a></p>
+                        </div>
+                        
+                            <div class="col-sm-5">
+                                <p><a href="#">Terms And Condition Of Use</a></p>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="col-sm-5 bottom-menu-right">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="#"><img src="assests/ACN/images/home/social/fb-logo.png" alt="Facebook logo"></a>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <a href="#"><img src="assests/ACN/images/home/social/youtube.png" alt="YouTube logo"></a>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <a href="#"><img src="assests/ACN/images/home/social/wfdsa-logo.png" alt="WFDSA logo"></a>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <a href="#"><img src="assests/ACN/images/home/social/Blog_Icon.png" alt="Blog logo"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 bottom-menu-right">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <a href="#"><img src="assests/ACN/images/home/social/fb-logo.png" alt="Facebook logo"></a>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <a href="#"><img src="assests/ACN/images/home/social/youtube.png" alt="YouTube logo"></a>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <a href="#"><img src="assests/ACN/images/home/social/wfdsa-logo.png" alt="WFDSA logo"></a>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <a href="#"><img src="assests/ACN/images/home/social/Blog_Icon.png" alt="Blog logo"></a>
-                    </div>
-
-                </div>
+            <div class="copyright">
+                <h5>
+                    &copy; 2016, Oportunidad ACN M&eacute;xico, S. DE R.L. de C.V.
+                </h5>
             </div>
-        </div>
-        <div class="copyright">
-            <h5>
-                &copy; 2016, Oportunidad ACN M&eacute;xico, S. DE R.L. de C.V.
-            </h5>
         </div>
     </footer>
 

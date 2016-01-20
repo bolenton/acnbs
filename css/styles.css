@@ -8,39 +8,65 @@ body {
     color: black;
 }
 
-.bob {
-    display: inline-block;
+.container{
+    width: 58%;
 }
 
-a:link {
-    color: BLACK;
+h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 34px;
+    font-size: 33px;
 }
-
-a:visited {
-    color: black;
-}
-
-a:hover {
-    color: black;
-}
-
-
 
 /* Header */
+.nav1{
+    width: auto;
+    background-color: #D3D3D3;
+    min-height: 30px;
+    margin-bottom: 0;
+    border:0;
+}
 
-.account-btn {
+.nav1 .navbar-brand{
+    padding: 0;
+    padding-top: 6px;
+    height: 30px;
+}
+
+.nav1 .black-text > li > a {
+   color: black;
+   font-size: 13px;
+}
+
+
+.nav1 .navbar-brand img{
+    height: 22px;
+}
+
+a.dropdown-toggle.account-btn {
     color: #919294;
     font-size: 16px;
-    margin: 5px 20px 0 20px;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+.nav1 a.dropdown-toggle{
+    padding-top: 5px !important;
+}
+
+
+.nav1 ul li a.dropdown-toggle{
+    margin: 0;
+    padding: 0 15px;
 }
 
 fa-shopping-cart {
     color: grey;
 }
 
-.nav1 {
-    background-color: #D3D3D3;
-}
+
 
 .country-drop-menu li{
     border-bottom-style: solid;
@@ -48,24 +74,33 @@ fa-shopping-cart {
     border-bottom-color: #7C7C7C;
 }
 
+.underline:hover{
+    text-decoration: underline;
+}
 
+/* Welcome MSG */
+.welcome-msg{
+    font-size: 17px;
+    padding-top: 19px;
+    padding-bottom: 14px;
+}
 
 /* Main Navagition */
-
 .nav2 {
     background-color: #C3C5C8;
     border-bottom-style: solid;
-    border-bottom-width: thick;
+    border-bottom-width: 4px;
     border-bottom-color: #7C7C7C;
     margin-bottom: 0;
 }
 
-.head-border {
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(222, 222, 222));
-    padding-bottom: 10px;
+.nav2 img{
+    padding-top: 20px;
 }
 
-.main-menu {
+.head-border {
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(222, 222, 222));
+    padding-bottom: 8px;
 }
 
 .main-menu ul {
@@ -75,6 +110,11 @@ fa-shopping-cart {
     margin-left: 0;
     padding-left: 0;
     text-transform: uppercase;
+}
+
+
+.main-menu ul li ul{
+    text-transform: none;
 }
 
 .main-menu li {
@@ -98,15 +138,29 @@ fa-shopping-cart {
     color: black;
     display: inline-block;
     text-decoration: none;
-    color: #7a7a7a;
     padding: 20px 13px;
     margin: 0;
 }
 
 /* hover effects for main nav*/
 
-.main-menu ul li ul{
+.main-menu ul .green-menu ul{
     visibility:hidden;
+    height: 45px;
+    border:none;
+    padding-bottom: 50px;
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+
+.drop-style{
+    height: 45px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.main-menu ul li ul li ul {
+    margin-top: 10px;
 }
 
 .main-menu ul li:hover ul, .main-menu ul li.over ul {
@@ -115,12 +169,9 @@ fa-shopping-cart {
   visibility: visible
 }
 
-.main-menu ul li ul li ul {
-  padding: 0;
-}
-
 .main-menu ul li ul li { 
-    background-color: #A2D056; 
+    height: 45px;
+    background-color: #9AC652; 
     display: block; 
     color: white;
     text-indent: 15px ;
@@ -135,14 +186,89 @@ fa-shopping-cart {
     background-color: #9AC652;
 }
 
+.main-menu ul li ul li ul li{
+    height: 45px;  
+    background-color: #9ED741; 
+}
+
+.main-menu ul li ul li ul li:hover{
+    height: 45px;  
+    background-color: #A2D056; 
+}
+
 .main-menu ul li:hover ul ul, .main-menu ul li.over ul ul{
     display:none;
     background-color: #A2D056
 }
 
+
+/* hover effects for main nav*/
+
+.main-menu ul .blue-menu ul{
+    visibility:hidden;
+    height: 45px;
+    border:none;
+    padding-bottom: 50px;
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+
+.drop-style{
+    height: 45px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.main-menu ul .blue-menu ul li ul {
+    margin-top: 10px;
+}
+
+.main-menu ul .blue-menui:hover ul, .main-menu ul .blue-menu.over ul {
+  display: block;
+  opacity: 1;
+  visibility: visible
+}
+
+.main-menu ul .blue-menu ul li { 
+    height: 45px;
+    background-color: #24B5D4; 
+    display: block; 
+    color: white;
+    text-indent: 15px ;
+    font-weight: bolder;
+    width: 240px; 
+    height: 35px;
+    border: none;
+    padding-top: 10px
+}
+
+.main-menu ul .blue-menu ul li:hover { 
+    background-color: #24B5D4;
+}
+
+.main-menu ul .blue-menu ul li ul li{
+    height: 45px;  
+    background-color: #11C1E7; 
+}
+
+.main-menu ul .blue-menu ul li ul li:hover{
+    height: 45px;  
+    background-color: #26BEDF; 
+}
+
+.main-menu ul li:hover ul ul, .main-menu ul li.over ul ul{
+    display:none;
+    background-color: palevioletred
+}
+
 .main-menu ul ul li:hover ul, .main-menu ul ul li.over ul{
     display: block;
 }
+
+.nav2 .navbar-nav li a {
+    color: black;
+}
+
 
 
 /* Banner / Jumbotron*/
@@ -161,12 +287,25 @@ img.demo {
     width: 100%;
 }
 
-.center-banner-style p, .center-banner-style a {
+.center-banner-style p {
     text-transform: uppercase;
     text-align: center;
     color: white;
     margin: 0;
     text-decoration: none;
+}
+
+#middle{
+    margin-bottom: 77px;
+}
+
+#middle div div div > p{
+    color: black;
+    padding-bottom: 5px;
+}
+
+.center-banner-style{
+    margin-bottom: 15px;
 }
 
 .center-banner1 p {
@@ -185,50 +324,16 @@ img.demo {
     background-color: #7E888D;
 }
 
+
+[data-toggle="textcollapse"] {
+    font-size: 24px;
+    font-weight: bold;
+    color: #428bca;
+    text-decoration: none;
+}
+
+
 /* Footer */
-
-#sitefooter #top-footer {
-    background-color: #fff;
-    padding: 50px 0;
-}
-
-#sitefooter {
-    color: #27425e;
-    font-family: "Enzo Medium";
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-
-#sitefooter #top-footer .policylink-container div {
-    display: block;
-    min-height: 35px;
-}
-
-#sitefooter #top-footer .policylink-container div .policy-link {
-    color: #27425e;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    font-size: 14px;
-}
-
-a:active, a:visited, a:focus {
-    outline: 0;
-    border: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 hr {
     border-width: 0;
     background-color: #c3c5c8;
@@ -237,7 +342,7 @@ hr {
     border-bottom: 2px solid #e1e2e3;
 }
 
-footer {
+footer{
     height: 136px;
 }
 
@@ -252,9 +357,24 @@ footer {
     font-size: 14px;
     color: darkgray;
     text-transform: uppercase;
-    padding-top: 0px;
+    padding-left: 0;
 }
 
+
+
+.col-sm-3{
+  
+    
+}
+
+footer .container{
+    padding-left: 0;
+}
+
+.bottom-links a{
+    color:black;
+
+}
 
 
 
