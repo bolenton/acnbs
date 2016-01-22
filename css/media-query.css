@@ -1,0 +1,38 @@
+/* Media Queries  */
+@media all and (max-width: 767px){ 
+    body{
+        
+    }
+    
+    .nav1, .top-msg, .head-border{
+        display: none;
+    }
+    
+    .main-msg h1{
+        font-size: 25px;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .bottom-menu-right{
+        display: none;
+    }
+}
+     
+@media all and (min-width: 768px) and (max-width: 991px){ 
+    body{
+    
+    }
+} 
+    
+@media all and (min-width: 992px) and (max-width: 1199px){ 
+    body{
+      
+    }
+}
+  
+@media all and (min-width: 1200px){ 
+   body{
+      
+    }
+}

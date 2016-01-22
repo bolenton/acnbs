@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/media-query.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -18,46 +19,46 @@
     <nav class="navbar navbar-default nav1" role="navigation">
         <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <a class="navbar-brand" href="#"><img src="assests/ACN/images/home/Mexico.png" /></a>
-                <ul class="nav navbar-nav black-text">
-                    <li class="dropdown underline">
+
+            <a href="#" class="navbar-brand collapse navbar-collapse"><img src="assests/ACN/images/home/Mexico.png" /></a>
+            <ul class="nav navbar-nav black-text">
+                <li class="dropdown underline">
                         <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#myModal">Mexico <b class="caret"></b></a>
                     </li>
-                    <li class="dropdown underline">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Spanish</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <li class="dropdown underline">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Spanish</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle account-btn" data-toggle="dropdown">Account Login</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Customer Login</a></li>
-                            <li><a href="#">IBO Login</a></li>
-                            <!--<li class="divider"></li>-->
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle account-btn" data-toggle="dropdown">
-                            <div class="bob">
-                                <i class="fa fa-shopping-cart fa-flip-horizontal fa-lg"></i>
-                                <span>0</span>
-                                <span class="underline">items</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle account-btn" data-toggle="dropdown">Account Login</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Customer Login</a></li>
+                        <li><a href="#">IBO Login</a></li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle account-btn" data-toggle="dropdown">
+                        <div class="bob">
+                            <i class="fa fa-shopping-cart fa-flip-horizontal fa-lg"></i>
+                            <!--<i class="glyphicon glyphicon-shopping-car"></i>-->
+                            <span>0</span>
+                            <span class="underline">items</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <!--Top Welcome message-->
-    <div class="container">
+    <div class="container top-msg">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-9 welcome-msg">Welcome to the ACN lifestyle, where you can look great, feel great, live great!</div>
@@ -68,7 +69,7 @@
     <!--Main menu header-->
     <nav class="navbar navbar-default nav2">
         <div class="head-border"></div>
-        <div class="container">
+        <div class="container ">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -82,14 +83,20 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse main-menu" id="bs-example-navbar-collapse-1">
-                <a href="#"><img src="assests/ACN/images/home/acn-logo.png" /></a>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown green-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <a class=" hidden-xs hidden-sm hidden-md " href="# "><img src="assests/ACN/images/home/acn-logo.png " /></a>
+                <ul class="nav navbar-nav navbar-right ">
+                    <li>
+                        <a class="visible-md " href="# "><i class="fa fa-home "></i></a>
+                    </li>
+                    <li >
+                        <a class="visible-xs " href="# ">Home</a>
+                    </li>
+                    <li class="dropdown green-menu ">
+                        <a href="# " class="dropdown-toggle " data-toggle="dropdown " role="button " aria-haspopup="true" aria-expanded="false ">
                             Nutrition &amp; Wellness
                         </a>
-                        <ul class="dropdown-menu">
-                            <li class="drop-style">
+                        <ul class="dropdown-menu ">
+                            <li class="drop-style ">
                                 aNuMe
                                 <ul>
                                     <li>Nutritional Program</li>
@@ -100,12 +107,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown blue-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <li class="dropdown blue-menu ">
+                        <a href="# " class="dropdown-toggle " data-toggle="dropdown " role="button " aria-haspopup="true
+            " aria-expanded="false ">
                             Personal Care
                         </a>
-                        <ul class="dropdown-menu">
-                            <li class="drop-style">
+                        <ul class="dropdown-menu ">
+                            <li class="drop-style ">
                                 Alumine
                                 <ul>
                                     <li>Chinese Herbs Hair Care</li>
@@ -115,10 +123,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Shop Now</a></li>
-                    <li><a href="#">Opportunity</a></li>
-                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="# ">Services</a></li>
+                    <li><a href="# ">Shop Now</a></li>
+                    <li class="remove-left-border " ><a class="hidden-sm " href="# ">Opportunity</a></li>
+                    <li class="add-right-border "><a class="hidden-sm " href="# " >Testimonial</a></li>
                 </ul>
             </div>
         </div>
@@ -126,149 +134,165 @@
 
     <!--Main Banner/ Carousel-->
 
-    <div id="main-banner">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+    <div class="hidden-xs " id="main-banner ">
+        <div id="carousel-example-generic " class="carousel slide " data-ride="carousel ">
+            <ol class="carousel-indicators ">
+                <li data-target="#carousel-example-generic " data-slide-to="0 " class=" "></li>
+                <li data-target="#carousel-example-generic " data-slide-to="1 " class="active "></li>
+                <li data-target="#carousel-example-generic " data-slide-to="2 " class=" "></li>
             </ol>
-            <div class="carousel-inner">
-                <div class="item">
-                    <img src="assests/ACN/images/home/carousel/HOME_EN_01.jpg">
+            <div class="carousel-inner ">
+                <div class="item ">
+                    <img src="assests/ACN/images/home/carousel/HOME_EN_01.jpg ">
                 </div>
-                <div class="item active">
-                    <img src="assests/ACN/images/home/carousel/HOME_EN_02.jpg">
+                <div class="item active ">
+                    <img src="assests/ACN/images/home/carousel/HOME_EN_02.jpg ">
                 </div>
-                <div class="item">
-                    <img src="assests/ACN/images/home/carousel/HOME_EN_03.jpg">
+                <div class="item ">
+                    <img src="assests/ACN/images/home/carousel/HOME_EN_03.jpg ">
                 </div>
             </div>
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"></a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"></a>
+            <a class="left carousel-control " href="#carousel-example-generic " data-slide="prev "></a>
+            <a class="right carousel-control " href="#carousel-example-generic " data-slide="next "></a>
         </div>
     </div>
-
     <!--Bottom Content-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-9"><h1>A Better way Of Life…Today</h1></div>
+    <div class="container main-msg">
+        <div class="row ">
+            <div class="col-md-3 "></div>
+            <div class="col-md-9 ">
+                <h1>A Better way Of Life…Today</h1></div>
         </div>
     </div>
-
-    <section id="middle">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img class="demo" src="assests/ACN/images/home/home-image1.jpg" />
-                    <div class="center-banner1 center-banner-style">
-                        <a href="#">
+    <section id="middle ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <img class="demo " src="assests/ACN/images/home/home-image1.jpg " />
+                    <div class="center-banner1 center-banner-style ">
+                        <a href="# ">
                             <p>Nutrition &amp; Wellness</p>
                         </a>
                     </div>
-                    <p>
-                        aNuMe offers you a holistic portfolio of nutritional supplements made from natural ingredients designed
-                        to give your body what it needs to maintain a healthy
-                    </p>
-                    <a data-toggle="textcollapse">...</a>
-                    <div class="uppercase text-condense pull-right">
-                        <div class="shopping-link">
-                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    <div class="center-para ">
+                        <p>
+                            aNuMe offers you a holistic portfolio of nutritional supplements made from natural ingredients designed to give your body
+                            what it needs to maintain a healthy
+                        </p>
+                        <p data-toggle="textcollapse ">...</p>
+                    </div>
+                    <div class="uppercase text-condense pull-right ">
+                        <div class="row uppercase text-condense pull-right ">
+                            <div class="col-md-1 shopping-link ">
+                                <a href="# " class="cart-style btn btn-default " data-toggle="tooltip
+            " data-placement="top " title="Shop Now ">
+                                    <i class="fa fa-shopping-cart fa-flip-horizontal fa-lg "></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
-                <div class="col-md-3">
-                    <img class="demo" src="assests/ACN/images/home/home-image2.jpg" />
-                    <div class="center-banner2 center-banner-style">
-                        <a href="#">
+                <div class="col-md-3 ">
+                    <img class="demo " src="assests/ACN/images/home/home-image2.jpg " />
+                    <div class="center-banner2 center-banner-style ">
+                        <a href="# ">
                             <p>Personal Care</p>
                         </a>
                     </div>
-                    <p>
-                        Aluminé is part of a new era of skin care and hair care products that combine the most exotic ingredients
-                        in nature with the best technology to give you dramatic
-                    </p>
-                    <a href="#"><img class="center-cart" src="assests/ACN/images/home/cart3.png" /></a>
+                    <div class="center-para ">
+                        <p>
+                            Aluminé is part of a new era of skin care and hair care products that combine the most exotic ingredients in nature with
+                            the best technology to give you dramatic
+                        </p>
+                        <p data-toggle="textcollapse ">...</p>
+                    </div>
+                    <div class="uppercase text-condense pull-right ">
+                        <div class="row uppercase text-condense pull-right ">
+                            <div class="col-md-1 shopping-link ">
+                                <a href="# " class="cart-style btn btn-default " data-toggle="tooltip
+            " data-placement="top " title="Shop Now ">
+                                    <i class="fa fa-shopping-cart fa-flip-horizontal fa-lg "></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <img class="demo" src="assests/ACN/images/home/home-image3.jpg" />
-                    <div class="center-banner3 center-banner-style">
-                        <a href="#">
+                <div class="col-md-3 ">
+                    <img class="demo " src="assests/ACN/images/home/home-image3.jpg " />
+                    <div class="center-banner3 center-banner-style ">
+                        <a href="# ">
                             <p>Services</p>
                         </a>
                     </div>
-                    <p>
-                        ACN's strategic partnerships with global telecommunications companies provide you with easy access to
-                        some of the best mobile service plans and the latest
-                    </p>
+                    <div class="center-para ">
+                        <p>
+                            ACN's strategic partnerships with global telecommunications companies provide you with easy access to some of the best mobile
+                            service plans and the latest
+                        </p>
+                        <p data-toggle="textcollapse ">...</p>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <img class="demo" src="assests/ACN/images/home/home-image4.jpg" />
-                    <div class="center-banner4 center-banner-style">
-                        <a href="#">
+                <div class="col-md-3 ">
+                    <img class="demo " src="assests/ACN/images/home/home-image4.jpg " />
+                    <div class="center-banner4 center-banner-style ">
+                        <a href="# ">
                             <p>Opportunity</p>
                         </a>
                     </div>
-                    <p>
-                        At ACN, we want to provide you with "the opportunity"... the opportunity to own a home-based business
-                        with all the flexibility, and none of the large
-                    </p>
+                    <div class="center-para ">
+                        <p>
+                            At ACN, we want to provide you with "the opportunity "... the opportunity to own a home-based business with all the flexibility,
+                            and none of the large
+                        </p>
+                        <p data-toggle="textcollapse ">...</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!--Footer-->
     <hr />
+    <footer>
+        <div class="container ">
+            <div class="row bottom-links ">
+                <div class="col-sm-7 bottom-menu-left ">
+                    <div class="row ">
+                        <div class="col-sm-3 ">
+                            <p><a href="# ">Contact Us</a></p>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <p><a href="# ">Private Policy</a></p>
+                        </div>
 
-    <footer >
-        <div class="container">
-            <div class="row bottom-links">
-                <div class="col-sm-7 bottom-menu-left">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p><a href="#">Contact Us</a></p>
+                        <div class="col-sm-5 ">
+                            <p><a href="# ">Terms And Condition Of Use</a></p>
                         </div>
-                        <div class="col-sm-4">
-                            <p><a href="#">Private Policy</a></p>
-                        </div>
-                        
-                            <div class="col-sm-5">
-                                <p><a href="#">Terms And Condition Of Use</a></p>
-                            </div>
-                        </div>
+                    </div>
                 </div>
-                
                 <div class="col-sm-5 bottom-menu-right">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <a href="#"><img src="assests/ACN/images/home/social/fb-logo.png" alt="Facebook logo"></a>
+                    <div class="row ">
+                        <div class="col-sm-3 ">
+                            <a href="# "><img src="assests/ACN/images/home/social/fb-logo.png " alt="Facebook logo "></a>
                         </div>
-
-                        <div class="col-sm-3">
-                            <a href="#"><img src="assests/ACN/images/home/social/youtube.png" alt="YouTube logo"></a>
+                        <div class="col-sm-3 ">
+                            <a href="# "><img src="assests/ACN/images/home/social/youtube.png " alt="YouTube logo "></a>
                         </div>
-
-                        <div class="col-sm-3">
-                            <a href="#"><img src="assests/ACN/images/home/social/wfdsa-logo.png" alt="WFDSA logo"></a>
+                        <div class="col-sm-3 ">
+                            <a href="# "><img src="assests/ACN/images/home/social/wfdsa-logo.png " alt="WFDSA logo "></a>
                         </div>
-
-                        <div class="col-sm-2">
-                            <a href="#"><img src="assests/ACN/images/home/social/Blog_Icon.png" alt="Blog logo"></a>
+                        <div class="col-sm-2 ">
+                            <a href="# "><img src="assests/ACN/images/home/social/Blog_Icon.png " alt="Blog logo "></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
+            <div class="copyright ">
                 <h5>
                     &copy; 2016, Oportunidad ACN M&eacute;xico, S. DE R.L. de C.V.
                 </h5>
             </div>
         </div>
     </footer>
-
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -277,82 +301,123 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Select your Country</h4>
                 </div>
-                <div class="modal-body">
-                    <ul id="country-list">
-                        <li data-dismiss="modal">
-                            <div class="row margin-15">
-                                <div class="col-sm-2 col-xs-2">
-                                    <img src="assests/ACN/images/home/Mexico.png">
+                <div class="modal-body ">
+                    <ul class="country-flags ">
+                        <li data-dismiss="modal ">
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
                                 </div>
-                                <div class="col-sm-10 col-xs-10">
+                                <div class="col-sm-10 col-xs-10 ">
                                     <span>Mexico</span>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="row margin-15">
-                                <div class="col-sm-2 col-xs-2">
-                                    <img src="assests/ACN/images/home/Mexico.png">
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
                                 </div>
-                                <div class="col-sm-10 col-xs-10">
+                                <div class="col-sm-10 col-xs-10 ">
                                     <span>United States</span>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="row margin-15">
-                                <div class="col-sm-2 col-xs-2">
-                                    <img src="assests/ACN/images/home/Mexico.png">
+                        <li data-dismiss="modal ">
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
                                 </div>
-                                <div class="col-sm-10 col-xs-10">
+                                <div class="col-sm-10 col-xs-10 ">
                                     <span>Canada</span>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="row margin-15">
-                                <div class="col-sm-2 col-xs-2">
-                                    <img src="assests/ACN/images/home/Mexico.png">
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
                                 </div>
-                                <div class="col-sm-10 col-xs-10">
+                                <div class="col-sm-10 col-xs-10 ">
                                     <span>Korea</span>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="row margin-15">
-                                <div class="col-sm-2 col-xs-2">
-                                    <img src="assests/ACN/images/home/Mexico.png">
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
                                 </div>
-                                <div class="col-sm-10 col-xs-10">
+                                <div class="col-sm-10 col-xs-10 ">
                                     <span>Australia</span>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="row margin-15">
-                                <div class="col-sm-2 col-xs-2">
-                                    <img src="assests/ACN/images/home/Mexico.png">
+                        <li class="remove-bot-border ">
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
                                 </div>
-                                <div class="col-sm-10 col-xs-10">
-                                    <span>New Zealand</span>
+                                <div class="col-sm-10 col-xs-10 ">
+                                    <span>Austria</span>
+                                </div>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
+                                </div>
+                                <div class="col-sm-10 col-xs-10 ">
+                                    <span>United States</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-dismiss="modal ">
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
+                                </div>
+                                <div class="col-sm-10 col-xs-10 ">
+                                    <span>Canada</span>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="row margin-15">
-                                <div class="col-sm-2 col-xs-2">
-                                    <img src="assests/ACN/images/home/Mexico.png">
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
                                 </div>
-                                <div class="col-sm-10 col-xs-10">
+                                <div class="col-sm-10 col-xs-10 ">
+                                    <span>Korea</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
+                                </div>
+                                <div class="col-sm-10 col-xs-10 ">
+                                    <span>Australia</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="remove-bot-border ">
+                            <div class="row margin-15 ">
+                                <div class="col-sm-2 col-xs-2 ">
+                                    <img src="assests/ACN/images/home/Mexico.png ">
+                                </div>
+                                <div class="col-sm-10 col-xs-10 ">
                                     <span>Austria</span>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="modal-footer">
-                    <a class="cancel-text" data-dismiss="modal"><span>Cancel&nbsp;<span class="circle-border"><i class="fa-times"></i></span></span></a>
+                <div class="modal-footer ">
+                    <a class="cancel-text " data-dismiss="modal "><span>Cancel&nbsp;<span class="circle-border
+            "><i class="fa fa-times "></i></span></span></a>
                 </div>
             </div>
         </div>
@@ -360,7 +425,15 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js "></script>
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip "]').tooltip()
+    })
+    </script>
 </body>
+
 </html>
